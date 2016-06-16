@@ -1,0 +1,39 @@
+[0] package org.approvaltests.hadoop;
+
+import java.util.Comparator;
+
+import org.apache.hadoop.mrunit.types.Pair;
+
+public class PairComparer implements Comparator<Pair>{
+
+  /**
+   * comment
+   */
+  public static final PairComparer INSTANCE = new PairComparer();
+
+  /*
+   * comment
+   */
+  public int compare(Pair o1, Pair o2)
+  {
+[1]     // line comment
+      // return ((Comparable) o1.getFirst()).compareTo(o2.getFirst());
+[2]       return ((Comparable) o1.getFirst()).compareTo(o2.getFirst());
+  }
+
+[3]   //public int compare(Pair o1, Pair o2)
+  //{
+  //  // line comment
+  //    return ((Comparable) o1.getFirst()).compareTo(o2.getFirst());
+  //}
+[4] 
+  public void foo() {
+      System.out.println("foo");
+      System.out.println("foo"); // foo
+  }
+
+[5]   //public int compare(Pair o1, Pair o2)
+  //{
+  //    return ((Comparable) o1.getFirst()).compareTo(o2.getFirst());
+  //}
+[6] }
