@@ -13,6 +13,7 @@ public class PairComparer implements Comparator<Pair>{
 
   /*
    * comment
+   *
    */
   public int compare(Pair o1, Pair o2)
   {

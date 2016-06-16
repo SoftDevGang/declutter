@@ -5,9 +5,7 @@ require './src/extract_blocks'
 
 class CodeBlock
   # hack to have nice output in Approvals
-  def inspect
-    to_s
-  end
+  alias_method :inspect, :to_s
 end
 
 describe "block extraction" do

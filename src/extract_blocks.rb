@@ -14,9 +14,5 @@ def extract_blocks(file)
 end
 
 def comment? line
-  if line =~ /^\s*\/\//
-    true
-  else
-    false
-  end
+  !!( line =~ /^\s*\/\// )
 end
