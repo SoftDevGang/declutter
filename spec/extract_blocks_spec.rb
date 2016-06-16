@@ -6,7 +6,7 @@ require './src/extract_blocks'
 class CodeBlock
   # hack to have nice output in Approvals
   def inspect
-    body
+    to_s
   end
 end
 

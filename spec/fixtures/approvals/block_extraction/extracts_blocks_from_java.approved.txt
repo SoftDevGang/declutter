@@ -1,4 +1,5 @@
-[0] package org.approvaltests.hadoop;
+[0] code:
+package org.approvaltests.hadoop;
 
 import java.util.Comparator;
 
@@ -16,24 +17,30 @@ public class PairComparer implements Comparator<Pair>{
    */
   public int compare(Pair o1, Pair o2)
   {
-[1]     // line comment
+[1] comment:
+    // line comment
       // return ((Comparable) o1.getFirst()).compareTo(o2.getFirst());
-[2]       return ((Comparable) o1.getFirst()).compareTo(o2.getFirst());
+[2] code:
+      return ((Comparable) o1.getFirst()).compareTo(o2.getFirst());
   }
 
-[3]   //public int compare(Pair o1, Pair o2)
+[3] comment:
+  //public int compare(Pair o1, Pair o2)
   //{
   //  // line comment
   //    return ((Comparable) o1.getFirst()).compareTo(o2.getFirst());
   //}
-[4] 
+[4] code:
+
   public void foo() {
       System.out.println("foo");
       System.out.println("foo"); // foo
   }
 
-[5]   //public int compare(Pair o1, Pair o2)
+[5] comment:
+  //public int compare(Pair o1, Pair o2)
   //{
   //    return ((Comparable) o1.getFirst()).compareTo(o2.getFirst());
   //}
-[6] }
+[6] code:
+}
